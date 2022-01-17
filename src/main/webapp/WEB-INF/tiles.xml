@@ -34,6 +34,7 @@
 
     <definition name="pds/*.tiles" extends="base">
         <put-attribute name="body" value="/WEB-INF/views/pds/{1}.jsp" />
+        <put-attribute name="styles" value="/WEB-INF/views/pds/pdsstyle.jsp" />
         <put-attribute name="scripts" value="/WEB-INF/views/pds/pdsscripts.jsp" />
     </definition>
 

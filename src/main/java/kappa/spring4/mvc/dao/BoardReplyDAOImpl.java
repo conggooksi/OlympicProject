@@ -13,6 +13,8 @@ public class BoardReplyDAOImpl implements BoardReplyDAO{
 
     @Autowired private JdbcTemplate jdbcTemplate;
     @Value("#{sql['selectReply']}") private String selectReply;
+    @Value("#{sql['insertReply']}") private String insertReply;
+    @Value("#{sql['insertReReply']}") private String insertReReply;
 
     // 댓글 조회
     @Override
@@ -27,5 +29,23 @@ public class BoardReplyDAOImpl implements BoardReplyDAO{
                         rs.getString("reply"),
                         rs.getString("userid"),
                         rs.getString("regdate") ) );
+    }
+
+    // 댓글 처리
+    @Override
+    public void insertReply(ReplyVO rvo) {
+        Object[] param = new Object[] {
+                rvo.getBno(), rvo.getUserid(), rvo.getReply()};
+
+        jdbcTemplate.update(insertReply, param);
+    }
+
+    // 대댓글쓰기 처리
+    @Override
+    public void insertReReply(ReplyVO rvo) {
+        Object[] param = new Object[] {
+                rvo.getCno(), rvo.getBno(), rvo.getUserid(), rvo.getReply()};
+
+        jdbcTemplate.update(insertReReply, param);
     }
 }

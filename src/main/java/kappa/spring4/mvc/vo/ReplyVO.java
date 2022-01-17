@@ -3,8 +3,10 @@ package kappa.spring4.mvc.vo;
 
 import lombok.AllArgsConstructor;
 import lombok.Data;
+import lombok.NoArgsConstructor;
 
 @AllArgsConstructor
+@NoArgsConstructor
 @Data
 public class ReplyVO {
     private String rno;

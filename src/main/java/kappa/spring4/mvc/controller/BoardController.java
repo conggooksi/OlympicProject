@@ -4,6 +4,7 @@ import kappa.spring4.mvc.service.BoardReplyService;
 import kappa.spring4.mvc.service.BoardService;
 import kappa.spring4.mvc.utils.GoogleCaptchaUtil;
 import kappa.spring4.mvc.vo.BoardVO;
+import kappa.spring4.mvc.vo.ReplyVO;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
@@ -82,4 +83,19 @@ public class BoardController {
 
         return mv;
     }
+
+    // 댓글 쓰기 처리
+    @PostMapping("/board/replyok")
+    public String replyok(ReplyVO rvo) {
+        // 작성한 댓글을 확인하기 위해
+        // 현재 보고 있는 본문페이지를 다시 한번 불러옴
+        String returnPage = "redirect:/board/view?bno=" + rvo.getBno();
+
+        // 댓글번호 존재 여부에 따라 댓글/대댓글 여부 판단
+        if (rvo.getCno() == null) brsrv.newReply(rvo);
+        else brsrv.newReReply(rvo);
+
+        return returnPage;
+    }
+
 }

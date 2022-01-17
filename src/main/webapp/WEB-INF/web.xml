@@ -13,6 +13,15 @@
       <param-value>classpath:servlet-context.xml</param-value>
     </init-param>
     <load-on-startup>1</load-on-startup>
+
+    <!-- servlet Multipart 설정 -->
+    <multipart-config>
+      <location>C:\\Java\\pdsupload</location><!-- 업로드 임시저장소 -->
+      <max-file-size>20971520</max-file-size> <!-- 개별 업로드 최대 크기 : 1MB * 20 -->
+      <max-request-size>41943040</max-request-size><!-- 전체 업로드 크기 : 40MB -->
+      <file-size-threshold>20971520</file-size-threshold> <!-- 업로드시 사용할 메모리 크기 : 20MB -->
+    </multipart-config>
+
   </servlet>
 
   <servlet-mapping>

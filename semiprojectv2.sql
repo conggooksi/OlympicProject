@@ -240,3 +240,27 @@ values (rp_seq.nextval,7, 10003, 'user23', '블라블라블라블라...');
 -- 5        5         10009  user25  블라블라...        (댓글)
 
 select * from Reply order by cno, rno;
+
+
+-- 자료실
+-- 자동 시퀀스 : generated always as identity(12c 부터 지원)
+create table pds (
+                     pno int generated always as identity primary key,
+                     title varchar(150) not null,
+                     userid varchar(18) not null,
+                     regdate timestamp default sysdate,
+                     thumbs int default 0,
+                     views int default 0,
+                     fname1 varchar(50), fname2 varchar(50), fname3 varchar(50),
+                     fsize1 varchar(5), fsize2 varchar(5), fsize3 varchar(5),
+                     ftype1 varchar(5), ftype2 varchar(5), ftype3 varchar(5),
+                     fdown1 int default 0, fdown2 int default 0, fdown3 int default 0,
+                     contents clob not null,
+                     uuid varchar(20)
+);
+
+drop table pds;
+
+-- CRUD
+insert into pds(title, userid, fname1, fname2, fname3, fsize1, fsize2, fsize3, ftype1, ftype2, ftype3, contents, uuid)
+values (?,?,?,?,?,?,?,?,?,?,?,?,?);

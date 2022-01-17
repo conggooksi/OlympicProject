@@ -18,4 +18,16 @@ public class BoardReplyServiceImpl implements BoardReplyService{
 
         return brdao.selectReply(bno);
     }
+
+    // 댓글 쓰기
+    @Override
+    public void newReply(ReplyVO rvo) {
+        brdao.insertReply(rvo);
+    }
+
+    // 대댓글 쓰기
+    @Override
+    public void newReReply(ReplyVO rvo) {
+        brdao.insertReReply(rvo);
+    }
 }

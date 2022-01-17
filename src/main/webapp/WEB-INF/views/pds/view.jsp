@@ -9,7 +9,7 @@
 
 <div id="main">
             <div class="mt25">
-                <h2><i class="bi bi-chat-text-fill"></i> 자유게시판</h2>
+                <h2><i class="bi bi-cloud-download-fill"></i> 자료실</h2>
                 <hr>
             </div>
             
@@ -32,17 +32,17 @@
                         <tbody>
                             <tr><td colspan="2" class="vhead"
                                 style="padding: 45px 0">
-                                <h3>${bvo.title}</h3>
+                                <h3>${pvo.title}</h3>
                             </td></tr> <!-- 제목 -->
                             
                             <tr class="bg1">
-                            <td>${bvo.userid}</td>
-                            <td class="text-right">${bvo.regdate} / ${bvo.thumbs} / ${bvo.views}</td>
+                            <td>${pvo.userid}</td>
+                            <td class="text-right">${pvo.regdate} / ${pvo.thumbs} / ${pvo.views}</td>
                             </tr> <!-- 작성일, 추천수, 조회수 -->
                             
                             <tr>
                             <td colspan="2" class="vhead2" style="height: 550px">
-                                ${fn:replace(bvo.contents, newChar, '<br>')}
+                                ${fn:replace(pvo.contents, newChar, '<br>')}
                             </td>
                             </tr> <!-- 본문 -->
                         </tbody>
@@ -114,7 +114,7 @@
                             <button type="button" class="btn btn-dark" style="margin: auto" id="cmtbtn">댓글쓰기</button>
                         </div>
                         <input type="hidden" name="userid" id="userid" value="${sessionScope.uid}" />
-                        <input type="hidden" name="bno" id="bno" value="${param.bno}"/>
+                        <input type="hidden" name="pno" id="pno" value="${param.pno}"/>
                     </form>
                 </div>
                 <div class="col"></div>
@@ -133,7 +133,7 @@
                             <textarea name="reply" id="rereply" rows="8"
                                       cols="75" class="span4"></textarea>
                             <input type="hidden" name="userid" value="${sessionScope.uid}">
-                            <input type="hidden" name="bno" value="${param.bno}">
+                            <input type="hidden" name="pno" value="${param.pno}">
                             <input type="hidden" name="cno" id="cno">
                         </form>
                     </div>

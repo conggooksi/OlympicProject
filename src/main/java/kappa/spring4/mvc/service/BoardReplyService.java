@@ -6,4 +6,8 @@ import java.util.List;
 
 public interface BoardReplyService {
     List<ReplyVO> readReply(String bno);
+
+    void newReply(ReplyVO rvo);
+
+    void newReReply(ReplyVO rvo);
 }
