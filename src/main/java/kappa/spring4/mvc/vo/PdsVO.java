@@ -28,4 +28,9 @@ public class PdsVO {
     private String fdown3;
     private String contents;
     private String uuid;
+
+    public PdsVO(String fname1, String uuid) {
+        this.fname1 = fname1;
+        this.uuid = uuid;
+    }
 }

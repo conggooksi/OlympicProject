@@ -58,4 +58,11 @@ public class IndexController {
         return "redirect:/";
     }
 
+    // 다운로드 테스트
+    @GetMapping("/pdstest")
+    public String pdstest() {
+
+        return "pdstest";
+    }
+
 }

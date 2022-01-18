@@ -264,3 +264,12 @@ drop table pds;
 -- CRUD
 insert into pds(title, userid, fname1, fname2, fname3, fsize1, fsize2, fsize3, ftype1, ftype2, ftype3, contents, uuid)
 values (?,?,?,?,?,?,?,?,?,?,?,?,?);
+
+-- 1번 게시글의 첫번째 첨부파일명 조회
+select fname1 fname1, uuid from pds where pno = 1;
+
+-- 1번 게시글의 두번째 첨부파일명 조회
+select fname2 fname1, uuid from pds where pno = 1;
+
+-- 1번 게시글의 세번째 첨부파일명 조회
+select fname3 fname1, uuid from pds where pno = 1;

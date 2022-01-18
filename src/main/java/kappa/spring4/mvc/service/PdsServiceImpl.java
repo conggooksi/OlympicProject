@@ -69,6 +69,31 @@ public class PdsServiceImpl implements PdsService{
         // 위에서 생성한 uuid를 uuid를 pvo에 저장
         pvo.setUuid(uuid);
 
+        // 전송된 데이터들을 pds 테이블에 저장
+        pdao.insertPds(pvo);
+
         return false;
+    }
+
+    // 자료실 목록 출력
+
+
+    // 자료실 본문보기
+    @Override
+    public PdsVO readOnePds(String pno) {
+
+        return pdao.selectOnePds(pno);
+    }
+
+    // 다운로드할 파일명 알아내기
+    @Override
+    public PdsVO readOneFname(String pno, String order) {
+        return pdao.selectOneFname(pno, order);
+    }
+
+    // 다운로드한 파일 다운 수 처리
+    @Override
+    public void countDownPds(String pno, String order) {
+        pdao.updateDownPds(pno, order);
     }
 }

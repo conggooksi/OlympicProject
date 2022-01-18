@@ -213,8 +213,8 @@ public class FileUpDownUtil {
                        "." + fname.substring(pos+1);
 
         // HTTP 응답을 위해 stream 관련 변수 선언
-        InputStream is = null;
-        OutputStream os = null;
+        InputStream is = null;   // 파일 읽기
+        OutputStream os = null;  // 파일 쓰기(전송)
         File f = null;
 
         try {

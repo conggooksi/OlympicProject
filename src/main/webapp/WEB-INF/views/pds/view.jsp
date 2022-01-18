@@ -45,6 +45,26 @@
                                 ${fn:replace(pvo.contents, newChar, '<br>')}
                             </td>
                             </tr> <!-- 본문 -->
+
+                            <tr><td class="text-left">첨부1</td>
+                                <td><a href="/pds/down?pno=${pvo.pno}&order=1">${pvo.fname1}</a>
+                                    (${pvo.fsize1}KB, ${pvo.fdown1}회 다운로드함)</td>
+                            </tr> <!-- 첨부1 -->
+
+                            <c:if test="${pvo.fname2 ne '-'}"> <%-- 첨부파일명이 있으면 --%>
+                            <tr><td class="text-left">첨부2</td>
+                                <td><a href="/pds/down?pno=${pvo.pno}&order=2">${pvo.fname2}</a>
+                                    (${pvo.fsize2}KB, ${pvo.fdown2}회 다운로드함)</td>
+                            </tr> <!-- 첨부2 -->
+                            </c:if>
+
+                            <c:if test="${pvo.fname3 ne '-'}">
+                            <tr><td class="text-left">첨부3</td>
+                                <td><a href="/pds/down?pno=${pvo.pno}&order=3">${pvo.fname3}</a>
+                                    (${pvo.fsize3}KB, ${pvo.fdown3}회 다운로드함)</td>
+                            </tr> <!-- 첨부3 -->
+                            </c:if>
+
                         </tbody>
                     </table>
                 </div>
