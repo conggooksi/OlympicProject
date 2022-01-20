@@ -15,32 +15,11 @@
     <!-- 메인영역에 보여줄 페이지를 요청방법에 따라 구분해 둠 -->
     <!-- 메인영역을 제외한 나머지 영역은 위에서 정의한 템플릿을 참조함 -->
     <definition name="*.tiles" extends="base">
-        <put-attribute name="body" value="/WEB-INF/views/{1}.jsp" />
-        <put-attribute name="styles" value="/WEB-INF/views/indexstyle.jsp" />
-        <put-attribute name="scripts" value="/WEB-INF/views/indexscripts.jsp" />
+        <put-attribute name="body" value="/WEB-INF/views/replayBoard/{1}.jsp" />
+        <put-attribute name="styles" value="/WEB-INF/views/replayBoard/replayBoardstyle.jsp" />
+        <put-attribute name="scripts" value="/WEB-INF/views/replayBoard/replayBoardscripts.jsp" />
     </definition>
 
-    <definition name="join/*.tiles" extends="base">
-        <put-attribute name="body" value="/WEB-INF/views/join/{1}.jsp" />
-        <put-attribute name="styles" value="/WEB-INF/views/join/joinstyle.jsp" />
-        <put-attribute name="scripts" value="/WEB-INF/views/join/joinscripts.jsp" />
-    </definition>
 
-    <definition name="board/*.tiles" extends="base">
-        <put-attribute name="body" value="/WEB-INF/views/board/{1}.jsp" />
-        <put-attribute name="styles" value="/WEB-INF/views/board/boardstyle.jsp" />
-        <put-attribute name="scripts" value="/WEB-INF/views/board/boardscripts.jsp" />
-    </definition>
-
-    <definition name="pds/*.tiles" extends="base">
-        <put-attribute name="body" value="/WEB-INF/views/pds/{1}.jsp" />
-        <put-attribute name="styles" value="/WEB-INF/views/pds/pdsstyle.jsp" />
-        <put-attribute name="scripts" value="/WEB-INF/views/pds/pdsscripts.jsp" />
-    </definition>
-
-    <definition name="gallery/*.tiles" extends="base">
-        <put-attribute name="body" value="/WEB-INF/views/gallery/{1}.jsp" />
-        <put-attribute name="scripts" value="/WEB-INF/views/gallery/galleryscripts.jsp" />
-    </definition>
 
 </tiles-definitions>

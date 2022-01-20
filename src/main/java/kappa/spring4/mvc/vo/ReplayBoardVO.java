@@ -9,12 +9,10 @@ import lombok.*;
 // @ToString  <-- 여기 있는 값들을 다 출력하고 싶을 때 사용
 // @Data            // 위 5가지 속성을 모두 포함
 public class ReplayBoardVO {
-    private String bno;
-    private String title;
-    private String userid;
-    private String regdate;
-    private String thumbs;
+    private String rno;
+    private String event;
+    private String country;
+    private String rec;
     private String views;
-    private String contents;
 
 }
