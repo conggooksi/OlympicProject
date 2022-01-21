@@ -9,4 +9,11 @@
     #main { margin-top: 20px}
     img{width: 100%}
 
+    #floatMenu {
+        position: absolute;
+        width: 200px;
+        height: 200px;
+        left: 50px;
+        top: 10px;
+    }
 </style>

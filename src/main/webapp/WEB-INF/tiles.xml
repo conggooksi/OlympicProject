@@ -20,7 +20,7 @@
         <put-attribute name="scripts" value="/WEB-INF/views/indexscripts.jsp" />
     </definition>
  
-    <definition name="join/*.tiles" extends="base">
+    <definition name="member/*.tiles" extends="base">
          <put-attribute name="body" value="/WEB-INF/views/member/{1}.jsp" />
          <put-attribute name="styles" value="/WEB-INF/views/member/memberstyles.jsp" />
          <put-attribute name="scripts" value="/WEB-INF/views/member/memberscripts.jsp" />

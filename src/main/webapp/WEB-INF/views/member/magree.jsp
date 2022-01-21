@@ -1,81 +1,50 @@
-<!DOCTYPE html>
-<html lang="ko">
-<head>
-    <!-- Required meta tags -->
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
+<%@page pageEncoding="UTF-8" %>
+<main class="container">
+    <div class="mt25">
+        <h2><i class="bi bi-person"></i>회원가입</h2><hr>
+    </div>
 
-    <!-- Bootstrap CSS -->
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/css/bootstrap.min.css" integrity="sha384-zCbKRCUGaJDkqS1kPbPd7TveP5iyJE0EjAuZQTgFLD2ylzuqKfdKlfG/eSrtxUkn" crossorigin="anonymous">
-
-    <!--Bootstrap Icons-->
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.7.2/font/bootstrap-icons.css">
-    
-    <title>tproject</title>
-    <style>
-        #home { width: 200px;
-                height: 150px;
-                margin: auto}
-        #logo { margin-left: 10px}
-        
-        .m1030{margin:10px 30px 10px 50px;}
-        .mt25 {margin-top: 25px}
-        
-    </style>
-</head>
-<body>
-        <header class="row border">
-            <div class="col" id="logo">
-                <img src="/tproject/imgss/Olympichome.jpg" id="home">
-            </div>
-            <div class="col-7">
-                <h1 style="margin-top: 50px">Welcome</h1>
-            </div>
-        </header> <!-- header-end -->
-       <div class="row">
-           <img src="/tproject/imgss/%EC%9D%B4%EB%AF%B8%EC%A7%80_20220119_001.png"
-           style="width: 100%" class="img-fluid">
-       </div>
-       
-       
-        <main class="container">
-           <div class="mt25">
-               <h2><i class="bi bi-person"></i>회원가입</h2><hr>
-           </div>
-           
-           <nav aria-label="breadcrumb">
-               <ul class="breadcrumb">
-                   <li class="breadcrumb-item">
+    <nav aria-label="breadcrumb">
+        <ul class="breadcrumb">
+            <li class="breadcrumb-item">
                        <span class="badge badge-success"
-                           style="padding: 8px">이용약관</span>
-                   </li>
-                   <li class="breadcrumb-item">
+                             style="padding: 8px">이용약관</span>
+            </li>
+            <li class="breadcrumb-item">
                        <span class="badge badge-light"
-                           style="padding: 8px">실명확인</span>
-                   </li>
-                   <li class="breadcrumb-item">
+                             style="padding: 8px">실명확인</span>
+            </li>
+            <li class="breadcrumb-item">
                        <span class="badge badge-light"
-                           style="padding: 8px">정보입력</span>
-                   </li>
-                   <li class="breadcrumb-item">
+                             style="padding: 8px">정보입력</span>
+            </li>
+            <li class="breadcrumb-item">
                        <span class="badge badge-light"
-                           style="padding: 8px">가입완료</span>
-                   </li>
-                    
-               </ul>
-           </nav> 
-           <!-- 회원가입 진행단계표시 -->
-           
-           <div class="mt25">
-               <h3>사이트 약관동의</h3>
-               <small class="text-muted">회원가입을 위해서 아래 사이트 이용약관&middot; 개인정보 수집 및 이용에 대한 안내를 읽고 동의해 주세요.</small>
-               <hr>
-           </div>
-           
-           <div class="card card-body bg-light m1030">
-               <h4>사이트 이용약관</h4>
-                  <form>
-                   <div class="form-group">
+                             style="padding: 8px">가입완료</span>
+            </li>
+
+        </ul>
+    </nav>
+    <!-- 회원가입 진행단계표시 -->
+
+    <div class="mt25">
+        <h3>사이트 약관동의</h3>
+        <small class="text-muted">회원가입을 위해서 아래 사이트 이용약관&middot; 개인정보 수집 및 이용에 대한 안내를 읽고 동의해 주세요.</small>
+        <hr>
+    </div>
+
+    <div class="row">
+        <div class="amc">
+        <input class="custom-control-input" type="checkbox" id="agree1">
+        <label for="agree1" class="custom-control-label">
+            전체 동의합니다
+        </label>
+        </div>
+    </div>
+    <div class="card card-body bg-light m1030">
+        <h4>사이트 이용약관</h4>
+        <form>
+            <div class="form-group">
                        <textarea rows="10" class="form-control">
 제 1 장 환영합니다!
 제 1 조 (목적)
@@ -241,22 +210,22 @@
 
 Copyright © Kakao Corp. All rights reserved.
                        </textarea>
-                   </div>
-                   <div class="custom-control custom-checkbox text-right">
-                      <input class="custom-control-input" type="checkbox" id="agree1">
-                      <label for="agree1" class="custom-control-label">
-                          이용약관에 동의합니다
-                      </label>
-                   </div>
+            </div>
+            <div class="custom-control custom-checkbox text-right">
+                <input class="custom-control-input" type="checkbox" id="agree2">
+                <label for="agree2" class="custom-control-label">
+                    이용약관에 동의합니다
+                </label>
+            </div>
 
-                  </form> 
-           </div> 
-           <!-- 이용약관 -->
-           
-           <div class="card card-body bg-light m1030">
-               <h4>개인정보 수집및 이용에 대한 안내</h4>
-                  <form>
-                   <div class="form-group">
+        </form>
+    </div>
+    <!-- 이용약관 -->
+
+    <div class="card card-body bg-light m1030">
+        <h4>개인정보 수집및 이용에 대한 안내</h4>
+        <form>
+            <div class="form-group">
                        <textarea rows="10" class="form-control">
 1. 개인정보처리방침이란?
 주식회사 카카오(이하"회사")는 이용자의 ‘동의를 기반으로 개인정보를 수집·이용 및 제공’하고 있으며,
@@ -457,89 +426,25 @@ PC 기반 서비스의 제공을 위하여 쿠키를 이용하는 경우가 있�
 공고일자: 2021년 11월 30일
 시행일자: 2021년 12월 07일
                        </textarea>
-                   </div>
-                   <div class="custom-control custom-checkbox text-right">
-                      <input class="custom-control-input" type="checkbox" id="agree2">
-                      <label for="agree2" class="custom-control-label">
-                          개인정보 수집및 이용에 동의합니다
-                      </label>
-                   </div>
-                   
-                  </form> 
-           </div> 
-           <!-- 개인정보 수집 -->
-           
-              <div class="text-center"
-                  style="margin-bottom: 10px">
-               <button type="button" id="okagree"
-                    class="btn btn-success">
-                모두 동의합니다</button>
-            <button type="button" id="noagree"
-                    class="btn btn-danger">
-                모두 동의하지 않습니다</button>
-           </div><!-- 버튼 -->
-        </main> <!-- //main-end -->
-       
-       <footer class="row">
-           <img src="/tproject/imgss/%EC%9D%B4%EB%AF%B8%EC%A7%80_20220119_002.png"
-           style="width: 100%" class="img-fluid">
-       </footer><!-- footer -->
-       
-    <!-- 로그인 모달 -->
-    <div id="loginmodal" role="dialog" class="modal">
-        <div class="modal-dialog" role="document">
-            <div class="modal-content">
-                <div class="modal-header">
-                    <h3 class="modal-title">로그인</h3>
-                    <button class="btn btn-light"
-                     type="button" data-dismiss="modal">닫기</button>
-                </div> 
-                <!-- modal header-end -->
-                
-                <div class="modal-body">
-                    <form id="loginfrm" name="loginfrm">
-                        <div class="form-group row text-danger">
-                            <label form="userid" 
-                            class="col-form-label col-4 text-right">
-                            아이디</label>
-                            <input type="text" name="userid"
-                            id="userid" 
-                            class="form-control col-6 border-danger">
-                        </div>
-                        
-                        <div class="form-group row text-danger">
-                            <label form="userpw" 
-                            class="col-form-label col-4 text-right">
-                            비밀번호</label>
-                            <input type="password" name="userpw"
-                            id="userpw" 
-                            class="form-control col-6 border-danger">
-                        </div>
-                        
-                        <div class="form-group row">
-                            <div class="col-4"></div>
-                            <div class="form-check">
-                                <input type="checkbox" name="autolgn"
-                                class="form-check-input">
-                                <label class="form-check-label text-warning">
-                                    로그인 상태 유지
-                                </label>
-                            </div>
-                        </div>
-                    </form>
-                </div> <!-- modal body-end -->
-                
-                <div class="modal-footer justify-content-center">
-                    <button class="btn btn-danger"
-                     type="button" id="loginbtn">로그인</button>
-                    <button class="btn btn-warning text-write"
-                     type="button" id="findipbtn">아이디/비밀번호 찾기</button>
-                </div> <!-- modal footer-end -->
             </div>
-        </div>
+            <div class="custom-control custom-checkbox text-right">
+                <input class="custom-control-input" type="checkbox" id="agree3">
+                <label for="agree3" class="custom-control-label">
+                    개인정보 수집및 이용에 동의합니다
+                </label>
+            </div>
+
+        </form>
     </div>
-              
-    <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-fQybjgWLrvvRgtW6bFlB7jaZrFsaBXjsOMm/tB9LTS58ONXgqbR9W8oWht/amnpF" crossorigin="anonymous"></script>    
-</body>
-</html>
+    <!-- 개인정보 수집 -->
+
+    <div class="text-center"
+         style="margin-bottom: 10px">
+        <button type="button" id="okagree"
+                class="btn btn-success">
+            모두 동의합니다</button>
+        <button type="button" id="noagree"
+                class="btn btn-danger">
+            모두 동의하지 않습니다</button>
+    </div><!-- 버튼 -->
+</main> <!-- //main-end -->
