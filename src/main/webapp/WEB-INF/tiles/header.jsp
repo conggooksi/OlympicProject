@@ -15,8 +15,7 @@
                 class="btn"
                 data-toggle="modal"
                 data-target="#loginmodal"
-                style="font-size:20px;">
-            로그인</button><br>
+                style="font-size:20px;">로그인</button><br>
         <button type="button" class="btn" style="font-size:10px; padding:5px 5px">아이디/비밀번호찾기</button>
         <button type="button"
                 class="btn" style="font-size:10px; padding:5px 5px"><i class="bi-person"></i><a href="/member/magree">회원가입</a></button>

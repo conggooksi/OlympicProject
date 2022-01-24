@@ -11,53 +11,26 @@
         </div>
         <div class="col-5">
         <section id="sec01">
-                <table>
-                    <thead></thead>
-                    <tbody>
-                    <tr><td>
-                        <a href="">
-                            <div style="position: relative"><img src="imgss/%EC%9D%B4%EB%AF%B8%EC%A7%80_20220119_003.png"></div>
-                            <div style="position: absolute; margin: -41px 0 0 0"><button class="btn btn-primary" style="font-size: 15px">컬링</button></div>
-                            <div style="position: absolute; margin: -41px 0 0 620px"><button class="btn btn-primary"><i class="bi bi-play-fill"></i></button></div>
-                            <div style="position: absolute; margin: -41px 0 0 664px"><button style="width: 95px; height: 40px; font-size: 20px" class="btn btn-dark">2:30</button></div>
-                        </a>
-                    </td></tr>
-                    </tbody>
-                    <tfoot>
-                    <tr><td>
-                        <a href=""><p style="font-size:45px">Lorem ipsum</p></a>
-                    </td></tr>
-                    </tfoot>
-                </table>
-                <br>
-                <table>
-                    <thead></thead>
-                    <tbody>
-                    <tr><td>
-                        <a href="">
-                            <div style="position: relative"><img src="imgss/%EC%9D%B4%EB%AF%B8%EC%A7%80_20220119_003.png"></div>
-                            <div style="position: absolute; margin: -41px 0 0 0"><button class="btn btn-primary" style="font-size: 15px">컬링</button></div>
-                            <div style="position: absolute; margin: -41px 0 0 620px"><button class="btn btn-primary"><i class="bi bi-play-fill"></i></button></div>
-                            <div style="position: absolute; margin: -41px 0 0 664px"><button style="width: 95px; height: 40px; font-size: 20px" class="btn btn-dark">2:30</button></div>
-                        </a>
-                    </td></tr>
-                    </tbody>
-                    <tfoot>
-                    <tr><td>
-                        <a href=""><p style="font-size:45px">Lorem ipsum</p></a>
-                    </td></tr>
-                    </tfoot>
-                </table>
-    </section>
-    <section id="sec02">
-        <h3>오늘의 뉴스</h3>
-    </section>
+            <iframe width="550" height="315" src="https://www.youtube.com/embed/-L80JguJ2JY" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+        </section>
+
 
     </div>
 
-    <div class="col-4"></div>
+    <div class="col-4">
+        <iframe width="450" height="250" src="https://www.youtube.com/embed/FGNnYMADDEs" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+    </div>
 
     <div class="col"></div>
+    </div>
+
+        <section id="sec02" class="row">
+            <div class="col-2"></div>
+            <div class="col-8">
+                <h1>오늘의 뉴스</h1>
+            </div>
+            <div class="col-2"></div>
+        </section>
     </div>
 
     <div class="row">

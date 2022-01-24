@@ -32,9 +32,8 @@
 
     <tiles:insertAttribute name="footer"/>
 
-
-<!-- 로그인 모달 -->
-<tiles:insertAttribute name="modal"/>
+    <!--로그인 모달-->
+    <tiles:insertAttribute name="modal"/>
 
 <!-- Option 1: jQuery and Bootstrap Bundle (includes Popper) -->
 <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.min.js"></script>

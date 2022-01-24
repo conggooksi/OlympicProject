@@ -13,8 +13,7 @@ import javax.servlet.http.HttpSession;
 @Controller
 public class IndexController {
 
-    @Autowired
-    private MemberService msrv;
+    @Autowired private MemberService msrv;
 
     @GetMapping("/")
     public String index(){

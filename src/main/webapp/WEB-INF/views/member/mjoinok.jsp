@@ -45,7 +45,7 @@
     <div class="text-center" style="margin: 100px 0;">
         <button type="button" id="go2index" class="btn">
             <i class="bi bi-info-circle"></i>
-            <a href="localhost:8080" target="_self">
+            <a href="/index" target="_self">
             홈으로가기</a></button>
     </div><!-- 버튼 -->
 
