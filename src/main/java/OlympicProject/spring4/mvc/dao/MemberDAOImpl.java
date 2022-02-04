@@ -41,4 +41,5 @@ public class MemberDAOImpl implements MemberDAO {
         };
         return jdbcTemplate.update(insertMember,params);
     }
+
 }

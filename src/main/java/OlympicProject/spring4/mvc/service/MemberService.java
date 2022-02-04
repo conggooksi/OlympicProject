@@ -9,4 +9,5 @@ public interface MemberService {
     boolean newMember(MemberVO mvo);
 
     boolean loginMember(MemberVO mvo);
+
 }

@@ -4,7 +4,9 @@
 <header class="row">
 
     <div class="col" >
+        <a href="http://localhost:8080">
         <img src="/imgss/Olympichome.jpg" id="home">
+        </a>
     </div>
     <div class="col-5" id="logo">
         <img src="/imgss/%EA%B4%91%EA%B3%A0.png">
@@ -15,14 +17,19 @@
                 class="btn"
                 data-toggle="modal"
                 data-target="#loginmodal"
-                style="font-size:20px;">로그인</button><br>
+                style="font-size:20px;">
+            <i class="bi bi-play-circle text-danger"></i>
+            로그인</button><br>
         <button type="button" class="btn" style="font-size:10px; padding:5px 5px">아이디/비밀번호찾기</button>
         <button type="button"
                 class="btn" style="font-size:10px; padding:5px 5px"><i class="bi-person"></i><a href="/member/magree">회원가입</a></button>
         </c:if>
 
         <c:if test="${not empty sessionScope.uid}">
-            <button type="button" class="btn btn-dark" id="logoutbtn">로그아웃</button>
+            <div style="color: blue">${uid}님 방문을 환영합니다&nbsp
+            <button type="button" class="btn" id="logoutbtn">
+                <i class="bi bi-stop-circle text-danger"></i>
+                로그아웃</button></div>
         </c:if>
         <br>
         <br>
@@ -39,24 +46,41 @@
          style="width: 100%" class="img-fluid">
 </div>
 
-<nav class="nav navbar-expand navbar-light bg-light border">
+<nav class="nav navbar-expand navbar-light bg-light">
 
     <ul class="navbar-nav nav-fill w-100">
+        <div class="col-3"></div>
+        <div class="col">
+            <li class="nav-item">
+                <a class="nav-link" href="/member/magree">회원가입</a>
+            </li>
+        </div>
+        <div class="col">
+            <li class="nav-item">
+                <a class="nav-link" href="../event">종목</a>
+            </li>
+        </div>
+        <div class="col">
         <li class="nav-item">
-            <a class="nav-link" href="intro.html">일정</a>
+            <a class="nav-link" href="/schedule/schedule">일정</a>
         </li>
+        </div>
+        <div class="col">
         <li class="nav-item">
-            <a class="nav-link" href="intro.html">종목</a>
+            <a class="nav-link" href="/news">뉴스</a>
         </li>
+        </div>
+        <div class="col">
         <li class="nav-item">
-            <a class="nav-link" href="news/news.html">뉴스</a>
+            <a class="nav-link" href="../replay">다시보기</a>
         </li>
+        </div>
+        <div class="col">
         <li class="nav-item">
-            <a class="nav-link" href="reply/list.html">다시보기</a>
+            <a class="nav-link" href="/board/list?cpage=1">게시판</a>
         </li>
-        <li class="nav-item">
-            <a class="nav-link" href="board/list.html">게시판</a>
-        </li>
+        </div>
+        <div class="col-3"></div>
     </ul>
-    <div class="col"></div>
+
 </nav> <!-- nav -->

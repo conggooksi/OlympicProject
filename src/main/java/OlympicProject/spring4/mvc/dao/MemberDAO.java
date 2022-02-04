@@ -8,4 +8,5 @@ public interface MemberDAO {
     int selectOneUserid(String uid);
 
     int insertMember(MemberVO mvo);
+
 }

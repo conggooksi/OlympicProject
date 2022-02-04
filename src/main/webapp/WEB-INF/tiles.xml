@@ -38,9 +38,22 @@
         <put-attribute name="scripts" value="/WEB-INF/views/news/newsscripts.jsp" />
     </definition>
 
-    <definition name="gallery/*.tiles" extends="base">
-        <put-attribute name="body" value="/WEB-INF/views/gallery/{1}.jsp" />
-        <put-attribute name="scripts" value="/WEB-INF/views/gallery/galleryscripts.jsp" />
+    <definition name="replay/*.tiles" extends="base">
+        <put-attribute name="body" value="/WEB-INF/views/replay/{1}.jsp" />
+        <put-attribute name="styles" value="/WEB-INF/views/replay/replaystyles.jsp" />
+        <put-attribute name="scripts" value="/WEB-INF/views/replay/replayscripts.jsp" />
+    </definition>
+
+    <definition name="schedule/*.tiles" extends="base">
+        <put-attribute name="body" value="/WEB-INF/views/schedule/{1}.jsp" />
+        <put-attribute name="styles" value="/WEB-INF/views/schedule/schedulestyles.jsp" />
+        <put-attribute name="scripts" value="/WEB-INF/views/schedule/schedulescripts.jsp" />
+    </definition>
+
+    <definition name="event/*.tiles" extends="base">
+        <put-attribute name="body" value="/WEB-INF/views/event/{1}.jsp" />
+        <put-attribute name="styles" value="/WEB-INF/views/event/eventstyles.jsp" />
+        <put-attribute name="scripts" value="/WEB-INF/views/event/eventscripts.jsp" />
     </definition>
     
 </tiles-definitions>

@@ -136,7 +136,7 @@
                     <div class="form-group row">
                         <label class="col-form-label text-right col-2 text-primary" for="tel1">연락처</label>
                         <select id="tel1" name="tel1"
-                                class="form-control col-1 border-primary">
+                                class="form-control col border-primary">
                             <option>국번</option>
                             <option>010</option>
                             <option>011</option>
